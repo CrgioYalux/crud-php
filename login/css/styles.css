@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+form {
+	width: 80vw;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 20px 10px;
+	border: 2px solid rgba(40, 40, 200, 1);
+	border-radius: 16px;
+}
+.form_submit {
+	width: 30%;
+	margin-top: 10px;
+	padding: 0.4em 0.6em;
+	border: 1px solid black;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 99px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.u_name,
+.u_pass {
+	width: 100%;
+	padding: 0.4em 0.6em;
+	border: 2px solid black;
+	outline: 0;
+}
+.u_name:focus,
+.u_pass:focus {
+	outline: 1px solid black;
+	border: 2px solid rgba(40, 40, 200, 1);
+}
+p {
+	text-align: center;
+}
+a {
+	color: rgba(40, 40, 200, 1);
+	text-decoration: none;
+}
+a:hover {
+	color: rgba(40, 40, 200, 0.8);
+	text-decoration: underline;
+}
